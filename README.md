@@ -103,6 +103,6 @@ The dataset processing scripts are built using Python 3.10+. Key developer softw
 If you utilize this dataset layout or the accompanying PySpark processing code within your research, please cite this repository:
 
 ```text
-Chauhan, S., & Dhinesh Kumar, M. (2026). Satellite-Based Geospatial Characterization using NDVI. GitHub. https://github.com/Sanjay-Chauhan52/Satellite-Based-Geospatial-Characterization-using-NDVI
+Chauhan, Sanjay & Kumar M, Dhinesh. (2026). NDVILand: A Dataset of NDVI-Enhanced EuroSAT Satellite Images for Land Use. Zenodo. https://doi.org/10.5281/zenodo.20777578
 
 ```
