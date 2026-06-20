@@ -87,15 +87,15 @@ Where $\rho$ scales raw sensor Digital Numbers ($\text{DN}$) to normalized Botto
 
 The dataset processing scripts are built using Python 3.10+. Key developer software tool dependencies include:
 
-* 
+  * 
 `pyspark` (For distributed data mapping over RDD structures).
 
 
-* 
+  * 
 `rasterio` (For native uncompressed 16-bit GeoTIFF raster I/O handling).
 
 
-* 
+  * 
 `numpy` (For vectorized pixel matrix equations and validation filtering).
 
 
