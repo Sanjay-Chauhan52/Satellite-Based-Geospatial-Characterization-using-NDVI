@@ -9,7 +9,7 @@ The NDVILand dataset is a structured, multi-class geospatial dataset designed fo
 ## Dataset Specifications
 
  
-* **Total Image Count:** 27,000+ geo-referenced image patches.
+  * **Total Image Count:** 27,000+ geo-referenced image patches.
 
 
 * **Resolution Layout:** Uniform 64 × 64 pixels per image patch.
