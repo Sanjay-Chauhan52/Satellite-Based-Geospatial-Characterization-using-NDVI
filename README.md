@@ -1,5 +1,3 @@
-Here is a professional, clean `README.md` file designed for your GitHub repository. It matches the crisp, informative style of academic datasets and outlines the structure and technical specifications without using emojis.
-
 ---
 
 # NDVILand: A Dataset of NDVI-Enhanced EuroSAT Satellite Images for Land Use
@@ -10,61 +8,45 @@ The NDVILand dataset is a structured, multi-class geospatial dataset designed fo
 
 ## Dataset Specifications
 
-* 
-**Total Image Count:** 27,000+ geo-referenced image patches.
+ 
+* **Total Image Count:** 27,000+ geo-referenced image patches.
 
 
-* 
-**Resolution Layout:** Uniform 64 × 64 pixels per image patch.
+* **Resolution Layout:** Uniform 64 × 64 pixels per image patch.
 
 
-* 
-**Spatial Grid Sampling:** 10 meters per pixel ground sampling distance.
+* **Spatial Grid Sampling:** 10 meters per pixel ground sampling distance.
+
+* **Data Format:** Raw, uncompressed 16-bit GeoTIFF format to preserve complete sensor radiometric precision.
+
+* **Total Data Volume:** Approximately 1.93 GB.
 
 
-* 
-**Data Format:** Raw, uncompressed 16-bit GeoTIFF format to preserve complete sensor radiometric precision.
-
-
-* 
-**Total Data Volume:** Approximately 1.93 GB.
-
-
-* 
-**Data Source Origin:** Derived from the European Space Agency's (ESA) Sentinel-2 multi-spectral satellite instrument collection (*EuroSATallBands* variant).
-
+* **Data Source Origin:** Derived from the European Space Agency's (ESA) Sentinel-2 multi-spectral satellite instrument collection (*EuroSATallBands* variant).
 
 
 ## Target Land Use Categories
 
 The dataset features a balanced representation across 10 distinct terrain types, evaluating 500 unique ground locations per image class:
 
-* 
-**Forest (3,000 samples):** Dense tree canopies showcasing peak chlorophyll reflection.
+* **Forest (3,000 samples):** Dense tree canopies showcasing peak chlorophyll reflection.
 
 
-* 
-**Annual Crop (3,000 samples):** Active, seasonal agricultural crop fields.
+* **Annual Crop (3,000 samples):** Active, seasonal agricultural crop fields.
 
 
-* 
-**Residential (3,000 samples):** Suburban housing areas mixing built concrete infrastructure with green plots.
+* **Residential (3,000 samples):** Suburban housing areas mixing built concrete infrastructure with green plots.
 
 
-* 
-**Industrial (2,500 samples):** High-density commercial footprints, manufacturing warehouses, and factories.
+* **Industrial (2,500 samples):** High-density commercial footprints, manufacturing warehouses, and factories.
 
 
-* 
-**Highway (2,500 samples):** Impervious asphalt transit corridors and major roadways.
+* **Highway (2,500 samples):** Impervious asphalt transit corridors and major roadways.
+
+* **Sea Lake (2,500 samples):** Open inland/coastal water bodies showcasing high near-infrared absorption.
 
 
-* 
-**Sea Lake (2,500 samples):** Open inland/coastal water bodies showcasing high near-infrared absorption.
-
-
-* 
-**Remaining Categories:** Includes balanced selections for *Permanent Crops*, *Herbaceous Vegetation*, *Pastures*, and *Rivers* to capture comprehensive landscape heterogeneity.
+* **Remaining Categories:** Includes balanced selections for *Permanent Crops*, *Herbaceous Vegetation*, *Pastures*, and *Rivers* to capture comprehensive landscape heterogeneity.
 
 
 
@@ -89,14 +71,11 @@ The repository coordinates data handling through the following file layout:
 
 The images in this repository are pre-configured to target specific electromagnetic spectral windows essential for biophysical evaluations:
 
+* **Band 04 (Visible Red, 665 nm):** 10m resolution channel used to capture peak chlorophyll absorption.
+
+
+* **Band 08 (Near-Infrared, 842 nm):** 10m resolution channel used to capture terrain and leaf mesophyll back-scattering.
 * 
-**Band 04 (Visible Red, 665 nm):** 10m resolution channel used to capture peak chlorophyll absorption.
-
-
-* 
-**Band 08 (Near-Infrared, 842 nm):** 10m resolution channel used to capture terrain and leaf mesophyll back-scattering.
-
-
 
 These target bands allow for the automated calculations of the Normalized Difference Vegetation Index (NDVI):
 
