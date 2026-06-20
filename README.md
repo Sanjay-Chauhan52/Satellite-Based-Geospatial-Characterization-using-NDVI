@@ -55,15 +55,11 @@ The dataset features a balanced representation across 10 distinct terrain types,
 The repository coordinates data handling through the following file layout:
 
 ```text
-├── data/
-│   └── EuroSATallBands/             # Class-based image subdirectories
-│       ├── Forest/                  # 16-bit GeoTIFF files (64x64 pixels)
-│       ├── Industrial/              # 16-bit GeoTIFF files (64x64 pixels)
-│       ├── Highway/                 # 16-bit GeoTIFF files (64x64 pixels)
-│       └── [Remaining Classes]/     # Additional target terrain categories
-├── notebooks/
-│   └── PySpark_NDVI_Pipeline.ipynb # Code deployment logic for distributed band extraction
-└── validation_plots/                # Sample visualization maps rendered in RdYlGn spectrum
+├── NDVI_LAND_DATASET/               # Main dataset parent directory
+│   ├── NDVI images/                 # Processed output maps rendered in RdYlGn spectrum
+│   └── Real Satellite Images/       # Source multispectral satellite image files
+├── README.md                        # Project documentation file
+└── Satellite_Based_Crop_Health_&_Land_Use_Anal... # Main pipeline deployment logic script
 
 ```
 
