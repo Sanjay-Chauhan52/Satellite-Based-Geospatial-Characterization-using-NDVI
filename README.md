@@ -75,7 +75,7 @@ The images in this repository are pre-configured to target specific electromagne
 
 
 * **Band 08 (Near-Infrared, 842 nm):** 10m resolution channel used to capture terrain and leaf mesophyll back-scattering.
-* 
+  
 
 These target bands allow for the automated calculations of the Normalized Difference Vegetation Index (NDVI):
 
@@ -87,16 +87,14 @@ Where $\rho$ scales raw sensor Digital Numbers ($\text{DN}$) to normalized Botto
 
 The dataset processing scripts are built using Python 3.10+. Key developer software tool dependencies include:
 
-  * 
-`pyspark` (For distributed data mapping over RDD structures).
+  * `pyspark` (For distributed data mapping over RDD structures).
 
 
-  * 
-`rasterio` (For native uncompressed 16-bit GeoTIFF raster I/O handling).
+ 
+  * `rasterio` (For native uncompressed 16-bit GeoTIFF raster I/O handling).
 
 
-  * 
-`numpy` (For vectorized pixel matrix equations and validation filtering).
+  * `numpy` (For vectorized pixel matrix equations and validation filtering).
 
 
 
