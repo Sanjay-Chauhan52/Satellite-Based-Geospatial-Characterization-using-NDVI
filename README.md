@@ -130,18 +130,13 @@ The dataset generation pipeline is fully implemented in `notebook.ipynb` utilizi
 5. **Statistical Analysis:** Computing image-level statistics (Mean, SD, Min, Max).
 6. **Data Export:** Generating the `metadata.csv` file and organizing the processed images into structured, class-wise directories.
 
-## Getting Started
+##Source Dataset
 
-The dataset processing scripts are built using Python 3.10+. Key developer software tool dependencies include:
+The dataset is derived from the EuroSATallBands dataset, which is based on Sentinel-2 imagery provided by the European Space Agency (ESA).
 
-  * `pyspark` (For distributed data mapping over RDD structures).
-
-
- 
-  * `rasterio` (For native uncompressed 16-bit GeoTIFF raster I/O handling).
+https://www.kaggle.com/datasets/apollo2506/eurosat-dataset
 
 
-  * `numpy` (For vectorized pixel matrix equations and validation filtering).
 
 
 
