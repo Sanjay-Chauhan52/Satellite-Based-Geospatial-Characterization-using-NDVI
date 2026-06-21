@@ -17,7 +17,6 @@ The NDVILand dataset is a structured, multi-class geospatial dataset designed fo
 
 * **Spatial Grid Sampling:** 10 meters per pixel ground sampling distance.
 
-* **Data Format:** Raw, uncompressed 16-bit GeoTIFF format to preserve complete sensor radiometric precision.
 
 * **Total Data Volume:** Approximately 1.93 GB.
 
