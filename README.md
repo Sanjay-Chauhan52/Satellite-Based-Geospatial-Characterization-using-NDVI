@@ -104,6 +104,7 @@ vmin = -0.26
 vmax = 1
 
 to improve contrast and highlight non-vegetated regions.
+
 ## Dataset Metadata
 
 The repository includes a comprehensive metadata file (`metadata.csv`) to facilitate data filtering and analysis. It contains the following fields:
