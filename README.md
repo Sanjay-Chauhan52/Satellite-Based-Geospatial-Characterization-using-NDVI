@@ -104,7 +104,43 @@ vmin = -0.26
 vmax = 1
 
 to improve contrast and highlight non-vegetated regions.
+## Dataset Metadata
 
+The repository includes a comprehensive metadata file (`metadata.csv`) to facilitate data filtering and analysis. It contains the following fields:
+
+* **Image path:** The relative path to the stored image.
+* **Land use class:** The categorized land cover type.
+* **Mean NDVI:** The average Normalized Difference Vegetation Index value for the image.
+* **Standard deviation of NDVI:** The spatial variability of vegetation health within the image.
+* **Minimum NDVI:** The lowest recorded NDVI value.
+* **Maximum NDVI:** The highest recorded NDVI value.
+
+---
+
+## Processing Pipeline
+
+The dataset generation pipeline is fully implemented in `notebook.ipynb` utilizing a robust geospatial and big data stack:
+
+* **Core Languages & Libraries:** Python, NumPy, Rasterio, Matplotlib
+* **Distributed Computing:** Apache Spark (PySpark)
+
+### Workflow Steps
+1. **Data Loading:** Ingesting raw Sentinel-2 satellite imagery.
+2. **Band Extraction:** Isolating Band 4 (Red) and Band 8 (Near-Infrared).
+3. **NDVI Computation:** Calculating vegetation indices at the pixel level.
+4. **Visualization Generation:** Producing both standard RGB satellite images and false-color NDVI visualizations.
+5. **Statistical Analysis:** Computing image-level statistics (Mean, SD, Min, Max).
+6. **Data Export:** Generating the `metadata.csv` file and organizing the processed images into structured, class-wise directories.
+
+---
+
+## Applications
+
+This dataset is designed for scalability and can be leveraged across various domains, including:
+
+* **Remote Sensing & Environment:** Land use and land cover (LULC) classification, vegetation monitoring, crop health analysis, and environmental assessments.
+* **Machine Learning:** Training deep learning and computer vision models for satellite imagery analysis.
+* **Big Data Research:** Benchmarking big data analytics workflows using Apache Spark.
 ## Getting Started
 
 The dataset processing scripts are built using Python 3.10+. Key developer software tool dependencies include:
