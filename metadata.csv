@@ -1,4 +1,4 @@
-Image,Class,NDVI,_4,_5,_6
+Image_Path,Class,Mean_NDVI,Std_NDVI,Min_NDVI,Max_NDVI
 eurosat_data/EuroSATallBands/HerbaceousVegetation/HerbaceousVegetation_1006.tif,HerbaceousVegetation,0.28442240133323915,0.05920797655157032,0.14607715644861788,0.5245161288630594
 eurosat_data/EuroSATallBands/HerbaceousVegetation/HerbaceousVegetation_1674.tif,HerbaceousVegetation,0.26115420944284246,0.06782939098315538,-0.019786910167752077,0.5005537097174547
 eurosat_data/EuroSATallBands/HerbaceousVegetation/HerbaceousVegetation_994.tif,HerbaceousVegetation,0.10577730184578203,0.12177908583676597,-0.21384928673350445,0.5505359875380796
