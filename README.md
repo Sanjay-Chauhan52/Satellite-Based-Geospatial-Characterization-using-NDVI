@@ -55,11 +55,24 @@ The dataset features a balanced representation across 10 distinct terrain types,
 The repository coordinates data handling through the following file layout:
 
 ```text
-├── NDVI_LAND_DATASET/               # Main dataset parent directory
-│   ├── NDVI images/                 # Processed output maps rendered in RdYlGn spectrum
-│   └── Real Satellite Images/       # Source multispectral satellite image files
-├── README.md                        # Project documentation file
-└── Satellite_Based_Crop_Health_&_Land_Use_Anal... # Main pipeline deployment logic script
+
+NDVI_LAND_DATASET/                                       # Main dataset parent directory
+│
+├── Real Satellite Images/                               # Source multispectral satellite image files
+│     ├── AnnualCrop/
+│     ├── Forest/
+│     ├── Highway/
+│     └── ...
+│
+├── NDVI images/                                         # Processed output maps rendered in RdYlGn spectrum
+│     ├── AnnualCrop/
+│     ├── Forest/
+│     ├── Highway/
+│     └── ...
+│
+README.md                                                # Project documentation file
+metadata.csv                                             # Metadata file
+notebook.ipynb                                           # Main pipeline deployment logic script
 
 ```
 
