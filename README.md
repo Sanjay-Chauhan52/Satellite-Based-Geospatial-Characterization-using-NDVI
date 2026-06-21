@@ -91,22 +91,12 @@ $$\text{NDVI} = \frac{\rho_{\text{B08}} - \rho_{\text{B04}}}{\rho_{\text{B08}} +
 
 where:
 
-ρ
-B04
-	​
+ρB04-denotes Red reflectance.
+ρB08-denotes Near-Infrared reflectance.
 
- denotes Red reflectance.
-ρ
-B08
-	​
+Digital numbers(DN) are converted to Bottom-of-Atmosphere(BOA) reflectance by dividing by 10,000.
 
- denotes Near-Infrared reflectance.
-
-Digital numbers are converted to Bottom-of-Atmosphere reflectance by dividing by 10,000.
-
-The theoretical NDVI range is
-
-−1≤NDVI≤1
+The theoretical NDVI range is: −1≤NDVI≤1
 
 For visualization purposes, NDVI images are rendered using the RdYlGn colormap with
 
