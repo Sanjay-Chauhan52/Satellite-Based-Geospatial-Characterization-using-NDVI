@@ -88,21 +88,7 @@ These target bands allow for the automated calculations of the Normalized Differ
 
 $$\text{NDVI} = \frac{\rho_{\text{B08}} - \rho_{\text{B04}}}{\rho_{\text{B08}} + \rho_{\text{B04}}}$$
 
-where:
-
-ρB04-denotes Red reflectance.
-ρB08-denotes Near-Infrared reflectance.
-
-Digital numbers(DN) are converted to Bottom-of-Atmosphere(BOA) reflectance by dividing by 10,000.
-
-The theoretical NDVI range is: −1≤NDVI≤1
-
-For visualization purposes, NDVI images are rendered using the RdYlGn colormap with
-
-vmin = -0.26
-vmax = 1
-
-to improve contrast and highlight non-vegetated regions.
+Where:$\rho_{\text{B04}}$ denotes Red reflectance.$\rho_{\text{B08}}$ denotes Near-Infrared reflectance.Note: Digital numbers (DN) are converted to Bottom-of-Atmosphere (BOA) reflectance by dividing by 10,000.The theoretical NDVI range is: $-1 \le \text{NDVI} \le 1$For visualization purposes, NDVI images are rendered using the RdYlGn colormap with the following constraints to improve contrast and highlight non-vegetated regions:vmin = -0.26vmax = 1.0
 
 
 ## Getting Started
