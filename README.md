@@ -145,6 +145,6 @@ https://www.kaggle.com/datasets/apollo2506/eurosat-dataset
 If you utilize this dataset layout or the accompanying PySpark processing code within your research, please cite this repository:
 
 ```text
-Chauhan, Sanjay & Kumar M, Dhinesh. (2026). NDVILand: A Dataset of NDVI-Enhanced EuroSAT Satellite Images for Land Use. Zenodo. https://doi.org/10.5281/zenodo.20777578
+Chauhan, Sanjay & Kumar M, Dhinesh. (2026). NDVILand: A Dataset of NDVI-Enhanced EuroSAT Satellite Images for Land Use. Zenodo. https://doi.org/10.5281/zenodo.21728275
 
 ```
